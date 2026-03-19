@@ -10,10 +10,9 @@ namespace InventorySystem.Repository.Orders
         {
             _context = context;
         }
-
-        public Order PlaceOrder(Order order)
+        public void PlaceOrder(Order order)
         {
-            throw new NotImplementedException();
+            _context.Orders.Add(order);
         }
     }
 }

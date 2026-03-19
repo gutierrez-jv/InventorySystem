@@ -4,6 +4,6 @@ namespace InventorySystem.Repository.Orders
 {
     public interface IOrdersRepository
     {
-        Order PlaceOrder(Order order);
+        void PlaceOrder(Order order);
     }
 }
