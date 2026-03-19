@@ -11,7 +11,7 @@ namespace InventorySystem.Repository.Customers
         {
             _context = context;
         }
-        public Customer? GetCustomer(int customerId)
+        public Customer GetCustomer(int customerId)
         {
             return  _context.Customers.Find(customerId);
         }

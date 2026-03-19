@@ -15,6 +15,6 @@ namespace InventorySystem.Service.Customers
         {
             if (customerId <= 0) throw new ArgumentException("Customer ID must be greater than zero.");
             return _customerRepository.GetCustomer(customerId);
-        }   
+        }
     }
 }
